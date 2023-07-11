@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/light_grey"
+tools:context=".Activities.PhoneNumberActivity">
+
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:lottie_rawRes="@raw/login_with_phone"/>
+
+<TextView
+    android:id="@+id/phoneLbl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Verify your phone number"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="@+id/imageView"
+    app:layout_constraintStart_toStartOf="@+id/imageView"
+    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="center"
+    android:text="ChatLily will send an SMS to verify your phone number."
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="@+id/phoneLbl"
+    app:layout_constraintStart_toStartOf="@+id/phoneLbl"
+    app:layout_constraintTop_toBottomOf="@+id/phoneLbl" />
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/phoneBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textbox_outline"
+            android:ems="10"
+            android:hint="Enter your phone number"
+            android:padding="10dp"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:text="Continue" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@drawable/camellia_lily_logo_mini"
+        android:gravity="center"
+        android:text="ChatLily"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

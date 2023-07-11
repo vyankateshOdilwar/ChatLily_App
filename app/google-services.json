@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529353676576",
+    "project_id": "chatlily-vyankatesh-odilwar",
+    "storage_bucket": "chatlily-vyankatesh-odilwar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529353676576:android:a42a6ee2f958046e0ba945",
+        "android_client_info": {
+          "package_name": "com.example.chatlily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529353676576-fabmbsl01p7i2qc81oeomotq4ko6fqvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWmUxr4yTd9Xe89Y4CjpKFU0nJ6LT0bOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529353676576-fabmbsl01p7i2qc81oeomotq4ko6fqvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
